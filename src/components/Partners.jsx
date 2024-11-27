@@ -6,7 +6,7 @@ import amd from "../images/AMD logo.png";
 
 const Partners = () => {
   return (
-    <div className="text-center mx-auto">
+    <div className="text-center mx-auto  dark:bg-gray-900">
       <h1 className="text-[16px] font-[400px] font-Montserrat text-center text-primary uppercase py-8">
         our Superprowers
       </h1>

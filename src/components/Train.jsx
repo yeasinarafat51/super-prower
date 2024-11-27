@@ -2,7 +2,7 @@ import check from "../images/ph_check-circle-duotone.png";
 
 const Train = () => {
   return (
-    <div className="xl:text-center text-start xl:mx-auto mx-10 space-y-4 overflow-hidden">
+    <div className="xl:text-center text-start xl:mx-auto mx-10 space-y-4 overflow-hidden  dark:bg-gray-900 p-4">
       <p className="text-white  text-[40px] font-Montserrat font-[600px]">
         Train your aiDR on your...
       </p>

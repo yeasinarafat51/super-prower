@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 import vec1 from "../images/Vector1.png";
 import vec2 from "../images/Vector2.png";
 import Card from "./SlideCard";
@@ -20,7 +19,7 @@ const Carousel = () => {
 
   return (
     <>
-      <div className="relative w-full max-w-4xl mx-auto my-8">
+      <div className="relative w-full max-w-4xl mx-auto my-8  dark:bg-gray-900">
         {/* Slides */}
         <div className="overflow-hidden relative">
           <div

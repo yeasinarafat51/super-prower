@@ -1,10 +1,12 @@
+/* eslint-disable react/prop-types */
 // Navbar.js
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa"; // Icons for menu and links
 import Button from "../common/Button";
 import logo from "../images/Logo.png";
+import { FaRegMoon } from "react-icons/fa6";
 
-const Navbar = () => {
+const Navbar = ({ toggleDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -12,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="container md:mx-6 fixed top-0 z-50   ">
+    <header className="container md:mx-6 fixed top-0 z-50    text-white ">
       <nav className=" flex justify-between md:space-x-64 items-center p-4 ">
         <div className="flex items-center justify-between space-x-64  ">
           <img src={logo} alt="" />
@@ -21,26 +23,28 @@ const Navbar = () => {
               {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
             </button>
           </div>
-         
         </div>
         <div className="hidden md:flex space-x-16">
-            <a href="#" className="hover:text-blue-500 font-Raleway text-white">
-              Home
-            </a>
-            <a href="#" className="hover:text-blue-500 font-Raleway text-white">
-              About
-            </a>
-            <a href="#" className="hover:text-blue-500 font-Raleway text-white">
-              Services
-            </a>
-            <a
-              href="#"
-              className="hover:text-blue-500 font-Raleway text-white "
-            >
-              Contact
-            </a>
-          </div>
-        <div>
+          <a href="#" className="hover:text-blue-500 font-Raleway text-white">
+            Home
+          </a>
+          <a href="#" className="hover:text-blue-500 font-Raleway text-white">
+            About
+          </a>
+          <a href="#" className="hover:text-blue-500 font-Raleway text-white">
+            Services
+          </a>
+          <a href="#" className="hover:text-blue-500 font-Raleway text-white ">
+            Contact
+          </a>
+        </div>
+        <div className="flex justify-center items-center gap-2">
+          <button
+            onClick={toggleDarkMode}
+            className="bg-gray-700 px-3 py-4 rounded text-sm hover:bg-gray-600"
+          >
+            <FaRegMoon />
+          </button>
           <Button className="hidden md:flex text-white">Project Start</Button>
         </div>
       </nav>
