@@ -8,7 +8,7 @@ const Partners = () => {
   return (
     <div className="text-center mx-auto">
       <h1 className="text-[16px] font-[400px] font-Montserrat text-center text-primary uppercase py-8">
-        our trusted partners
+        our Superprowers
       </h1>
       <div className="grid xl:grid-cols-5 grid-cols-2 xl:justify-center justify-items-center  items-center   xl:gap-8 gap-1 w-full h-auto xl:w-[768px] xl:h-[64px] text-center mx-auto">
         <img src={backhub} alt="" />

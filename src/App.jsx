@@ -1,6 +1,8 @@
 import Control from "./components/Control"
 import HeroSection from "./components/HeroSection"
 import Partners from "./components/Partners"
+import Carousel from "./components/SlideCarousel"
+import Train from "./components/Train"
 import Navbar from "./shared/Navbar"
 
 
@@ -15,6 +17,8 @@ function App() {
   <HeroSection/>
   <Partners />
   <Control/>
+  <Train/>
+  <Carousel/>
   
    </>
   )
