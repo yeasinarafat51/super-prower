@@ -1,3 +1,4 @@
+import Control from "./components/Control"
 import HeroSection from "./components/HeroSection"
 import Partners from "./components/Partners"
 import Navbar from "./shared/Navbar"
@@ -13,6 +14,7 @@ function App() {
   </div>
   <HeroSection/>
   <Partners />
+  <Control/>
   
    </>
   )
