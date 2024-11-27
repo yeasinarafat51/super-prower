@@ -1,4 +1,10 @@
 # React + Vite
+# Live-link: https://super-prower.vercel.app/
+# tailwind-css
+# Tailwind-merge
+# Tailwind-clsx
+# react-icons
+# Vercel
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
